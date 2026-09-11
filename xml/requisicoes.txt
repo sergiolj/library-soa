@@ -1,3 +1,8 @@
+Aplicativo SOAPUI - https://www.soapui.org/
+Faz a leitura do wsdl e cria as requisições XML
+
+
+
 http://localhost:8085/services/UserService?xsd=1
 http://localhost:8085/services/UserService?wsdl
 
