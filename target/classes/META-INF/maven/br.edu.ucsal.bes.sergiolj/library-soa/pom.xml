@@ -23,4 +23,27 @@
     		<scope>compile</scope>
         </dependency>
     </dependencies>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-maven-plugin</artifactId>
+            <version>4.0.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>wsimport</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <wsdlUrls>
+                    <wsdlUrl>http://localhost:8085/services/UserService?wsdl</wsdlUrl>
+                </wsdlUrls>
+                <packageName>br.com.biblioteca.client.stub</packageName>
+                <sourceDestDir>${project.build.directory}/generated-sources/wsimport</sourceDestDir>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>

@@ -1,0 +1,26 @@
+http://localhost:8085/services/UserService?xsd=1
+http://localhost:8085/services/UserService?wsdl
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+                  xmlns:ser="http://service.soa.library.com/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:loginUser>
+            <name>sergio</name>
+            <password>1234</password>
+        </ser:loginUser>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+                  xmlns:ser="http://service.soa.library.com/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ser:checkUserStatus>
+            <id>1</id>
+        </ser:checkUserStatus>
+    </soapenv:Body>
+</soapenv:Envelope>

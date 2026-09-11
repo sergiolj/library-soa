@@ -4,6 +4,7 @@ import java.util.List;
 
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
+import jakarta.jws.WebResult;
 import jakarta.jws.WebService;
 import model.User;
 
@@ -13,14 +14,15 @@ public interface UserService {
 	@WebMethod
 	boolean registerUser(@WebParam(name="user") User user);
 	
-	@WebMethod
-	boolean loginUser(@WebParam(name = "id") String id, @WebParam(name = "password") String password);
+	@WebMethod(operationName = "loginUser")
+	@WebResult(name ="authenticated")
+	boolean loginUser(@WebParam(name = "name") String name, @WebParam(name = "password") String password);
 	
 	@WebMethod
     boolean registerAttendant(@WebParam(name = "attendant") User user);
 
     @WebMethod
-    List<String> checkUserStatus(@WebParam(name = "id") String id);
+    String checkUserStatus(@WebParam(name = "id") String id);
 
     @WebMethod
     List<String> retrieveUserLoanHistory(@WebParam(name = "id") String id);

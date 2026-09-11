@@ -1,5 +1,5 @@
 package model;
 
 public enum UserCategory {
-	STUDENT, TEATCHER, ATTENDENT, SUPERVISOR
+	STUDENT, TEATCHER, ATTENDANT, SUPERVISOR
 }
