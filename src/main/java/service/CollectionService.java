@@ -1,5 +1,7 @@
 package service;
 
+import java.util.List;
+
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import jakarta.jws.WebService;
@@ -12,7 +14,7 @@ public interface CollectionService {
 	boolean registerMedia(@WebParam(name="media") Media media);
 	
 	@WebMethod
-	boolean checkMediaAvaiability(@WebParam(name="media") Media media);
+	List<Media> checkMediaAvaiabilityByName(@WebParam(name="mediaName") String mediaName);
 	
 	@WebMethod
 	boolean checkMediaAvaiabilityById(@WebParam(name = "id") String id);

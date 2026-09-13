@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="ee2069a0-a2a1-49bc-9538-9208a20bea99" activeEnvironment="Default" name="Library UserService?wsdl" resourceRoot="" soapui-version="5.10.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="aad31f81-fa5c-4703-a6be-675c179dca52" wsaVersion="NONE" name="UserServicePortBinding" type="wsdl" bindingName="{http://service.soa.library.com/}UserServicePortBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8085/services/UserService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8085/services/UserService?wsdl"><con:part><con:url>http://localhost:8085/services/UserService?wsdl</con:url><con:content><![CDATA[<!--Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is XML-WS Runtime 4.0.1 git-revision#298606e.-->
+<con:soapui-project id="ee2069a0-a2a1-49bc-9538-9208a20bea99" activeEnvironment="Default" name="Library UserService?wsdl" resourceRoot="" soapui-version="5.10.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="aad31f81-fa5c-4703-a6be-675c179dca52" wsaVersion="NONE" name="UserServicePortBinding" type="wsdl" bindingName="{http://service.soa.library.com/}UserServicePortBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8085/services/UserService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.jbossws.WSToolsWsdl2JavaAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Output Directory" value=""/>
+  <con:entry key="Unwrap" value="false"/>
+  <con:entry key="Append" value="false"/>
+  <con:entry key="Use cached WSDL" value="true"/>
+  <con:entry key="Servlet Link" value=""/>
+  <con:entry key="EJB Link" value=""/>
+  <con:entry key="Mapping file" value=""/>
+  <con:entry key="WSDL" value="http://localhost:8085/services/UserService?wsdl"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Namespace mapping" value="&lt;xml-fragment/>"/>
+</xml-fragment>]]></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.wscompile.WSCompileAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="resolveidref" value="false"/>
+  <con:entry key="source" value=""/>
+  <con:entry key="WSDL" value="http://localhost:8085/services/UserService?wsdl"/>
+  <con:entry key="wsi" value="true"/>
+  <con:entry key="directory" value=""/>
+  <con:entry key="Namespace mapping" value="&lt;xml-fragment/>"/>
+  <con:entry key="unwrap" value="false"/>
+  <con:entry key="security" value=""/>
+  <con:entry key="Use cached WSDL" value="true"/>
+  <con:entry key="optimize" value="false"/>
+  <con:entry key="norpcstructures" value="false"/>
+  <con:entry key="model" value=""/>
+  <con:entry key="searchschema" value="false"/>
+  <con:entry key="strict" value="false"/>
+  <con:entry key="non-class" value=""/>
+  <con:entry key="novalidation" value="false"/>
+  <con:entry key="nomultirefs" value="false"/>
+  <con:entry key="mapping" value=""/>
+  <con:entry key="package" value=""/>
+  <con:entry key="debug" value="false"/>
+  <con:entry key="nodatabinding" value="false"/>
+  <con:entry key="serializeinterfaces" value="false"/>
+  <con:entry key="source version" value="1.1.2"/>
+  <con:entry key="explicitcontext" value="false"/>
+  <con:entry key="jaxbenumtype" value="false"/>
+  <con:entry key="datahandleronly" value="false"/>
+  <con:entry key="proxy" value=""/>
+  <con:entry key="keep" value="false"/>
+  <con:entry key="noencodedtypes" value="false"/>
+  <con:entry key="donotunwrap" value="false"/>
+  <con:entry key="Tool Args" value=""/>
+</xml-fragment>]]></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.wsimport.WSImportAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="wsdlLocation" value=""/>
+  <con:entry key="Use cached WSDL" value="true"/>
+  <con:entry key="Keep" value="false"/>
+  <con:entry key="Source Directory" value=""/>
+  <con:entry key="Package" value=""/>
+  <con:entry key="Binding files" value=""/>
+  <con:entry key="WSDL" value="http://localhost:8085/services/UserService?wsdl"/>
+  <con:entry key="Target Directory" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Catalog" value=""/>
+  <con:entry key="HTTP Proxy" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8085/services/UserService?wsdl"><con:part><con:url>http://localhost:8085/services/UserService?wsdl</con:url><con:content><![CDATA[<!--Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is XML-WS Runtime 4.0.1 git-revision#298606e.-->
 <!--Generated by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is XML-WS Runtime 4.0.1 git-revision#298606e.-->
 <definitions targetNamespace="http://service.soa.library.com/" name="UserService" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.soa.library.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/">
   <types>
@@ -37,6 +92,12 @@
   <message name="retrieveUserLoanHistoryResponse">
     <part name="parameters" element="tns:retrieveUserLoanHistoryResponse"/>
   </message>
+  <message name="listAllUsers">
+    <part name="parameters" element="tns:listAllUsers"/>
+  </message>
+  <message name="listAllUsersResponse">
+    <part name="parameters" element="tns:listAllUsersResponse"/>
+  </message>
   <portType name="UserService">
     <operation name="registerUser">
       <input wsam:Action="http://service.soa.library.com/UserService/registerUserRequest" message="tns:registerUser"/>
@@ -57,6 +118,10 @@
     <operation name="retrieveUserLoanHistory">
       <input wsam:Action="http://service.soa.library.com/UserService/retrieveUserLoanHistoryRequest" message="tns:retrieveUserLoanHistory"/>
       <output wsam:Action="http://service.soa.library.com/UserService/retrieveUserLoanHistoryResponse" message="tns:retrieveUserLoanHistoryResponse"/>
+    </operation>
+    <operation name="listAllUsers">
+      <input wsam:Action="http://service.soa.library.com/UserService/listAllUsersRequest" message="tns:listAllUsers"/>
+      <output wsam:Action="http://service.soa.library.com/UserService/listAllUsersResponse" message="tns:listAllUsersResponse"/>
     </operation>
   </portType>
   <binding name="UserServicePortBinding" type="tns:UserService">
@@ -106,6 +171,15 @@
         <soap:body use="literal"/>
       </output>
     </operation>
+    <operation name="listAllUsers">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
   </binding>
   <service name="UserService">
     <port name="UserServicePort" binding="tns:UserServicePortBinding">
@@ -116,6 +190,8 @@
 <xs:schema version="1.0" targetNamespace="http://service.soa.library.com/" xmlns:tns="http://service.soa.library.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="checkUserStatus" type="tns:checkUserStatus"/>
   <xs:element name="checkUserStatusResponse" type="tns:checkUserStatusResponse"/>
+  <xs:element name="listAllUsers" type="tns:listAllUsers"/>
+  <xs:element name="listAllUsersResponse" type="tns:listAllUsersResponse"/>
   <xs:element name="loginUser" type="tns:loginUser"/>
   <xs:element name="loginUserResponse" type="tns:loginUserResponse"/>
   <xs:element name="registerAttendant" type="tns:registerAttendant"/>
@@ -124,6 +200,23 @@
   <xs:element name="registerUserResponse" type="tns:registerUserResponse"/>
   <xs:element name="retrieveUserLoanHistory" type="tns:retrieveUserLoanHistory"/>
   <xs:element name="retrieveUserLoanHistoryResponse" type="tns:retrieveUserLoanHistoryResponse"/>
+  <xs:complexType name="listAllUsers">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="listAllUsersResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="user">
+    <xs:sequence>
+      <xs:element name="category" type="tns:userCategory" minOccurs="0"/>
+      <xs:element name="id" type="xs:long" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="password" type="xs:string" minOccurs="0"/>
+      <xs:element name="status" type="tns:userStatus" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="retrieveUserLoanHistory">
     <xs:sequence>
       <xs:element name="id" type="xs:string" minOccurs="0"/>
@@ -147,15 +240,6 @@
   <xs:complexType name="registerUser">
     <xs:sequence>
       <xs:element name="user" type="tns:user" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="user">
-    <xs:sequence>
-      <xs:element name="category" type="tns:userCategory" minOccurs="0"/>
-      <xs:element name="id" type="xs:long" minOccurs="0"/>
-      <xs:element name="name" type="xs:string" minOccurs="0"/>
-      <xs:element name="password" type="xs:string" minOccurs="0"/>
-      <xs:element name="status" type="tns:userStatus" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="registerUserResponse">
@@ -263,7 +347,12 @@
          <id>?</id>
       </ser:retrieveUserLoanHistory>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service.soa.library.com/UserService/retrieveUserLoanHistoryRequest"/></con:call></con:operation></con:interface><con:testSuite id="7b12db5b-9560-4840-bd26-25ae08a26b7f" name="Test Login"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8476a31a-8603-4798-9033-fad90685d806" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Library" searchProperties="true"><con:settings/><con:testStep type="request" id="353646ef-52ce-4528-99f8-f66744671738" name="loginUser - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserServicePortBinding</con:interface><con:operation>loginUser</con:operation><con:request name="loginUser - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2d85ac34-0d01-48f7-833d-de7f3e535b6d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8085/services/UserService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.soa.library.com/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service.soa.library.com/UserService/retrieveUserLoanHistoryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="400e3af9-b5a4-4521-a764-69414dbbb59a" isOneWay="false" action="" name="listAllUsers" bindingOperationName="listAllUsers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e6d09903-0670-4b33-ae67-be48bd50f5da" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8085/services/UserService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.soa.library.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:listAllUsers/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service.soa.library.com/UserService/listAllUsersRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="7b12db5b-9560-4840-bd26-25ae08a26b7f" name="Test Login"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8476a31a-8603-4798-9033-fad90685d806" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Library" searchProperties="true"><con:settings/><con:testStep type="request" id="353646ef-52ce-4528-99f8-f66744671738" name="loginUser - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UserServicePortBinding</con:interface><con:operation>loginUser</con:operation><con:request name="loginUser - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2d85ac34-0d01-48f7-833d-de7f3e535b6d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8085/services/UserService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.soa.library.com/">
    <soapenv:Header/>
    <soapenv:Body>
       <ser:loginUser>

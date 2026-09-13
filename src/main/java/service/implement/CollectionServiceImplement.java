@@ -1,5 +1,8 @@
 package service.implement;
 
+import java.util.Collections;
+import java.util.List;
+
 import jakarta.jws.WebService;
 import model.Media;
 import repository.LibraryDatabase;
@@ -23,20 +26,23 @@ public class CollectionServiceImplement implements CollectionService {
 
 	@Override
 	public boolean registerMedia(Media media) {
-		// TODO Auto-generated method stub
+		if (media!=null) {
+			return database.addMedia(media);
+		}
 		return false;
 	}
 
 	@Override
-	public boolean checkMediaAvaiability(Media media) {
-		// TODO Auto-generated method stub
-		return false;
+	public List<Media> checkMediaAvaiabilityByName(String mediaName) {
+		if(!mediaName.isBlank()) {
+			return database.getMediaByName(mediaName);
+		}
+		return Collections.emptyList();
 	}
 
 	@Override
 	public boolean checkMediaAvaiabilityById(String id) {
-		// TODO Auto-generated method stub
-		return false;
+		return database.getMedia(id).isAvailable();
 	}
 
 }

@@ -22,8 +22,9 @@ public class LibraryDatabase {
 		users.put(idUser, user);
 	}
 	
-	public void addMedia(Media media) {
-		collectionMap.put(media.getBarcode(), media);
+	public boolean addMedia(Media media) {
+		Media savedMedia = collectionMap.put(media.getBarcode(), media);
+		return savedMedia != null;
 	}
 	
 	public void addLoan(Loan loan) {
@@ -54,5 +55,11 @@ public class LibraryDatabase {
 
 	public List<User> getAllUsers() {
 		return users.values().stream().collect(Collectors.toList());
+	}
+
+	public List<Media> getMediaByName(String mediaName) {
+		return collectionMap.values().stream()
+				.filter(m-> m.getTittle().equalsIgnoreCase(mediaName))
+				.collect(Collectors.toList());
 	}
 }
