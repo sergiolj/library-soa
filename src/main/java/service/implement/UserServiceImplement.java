@@ -70,4 +70,9 @@ public class UserServiceImplement implements UserService{
 		return null;
 	}
 
+	@Override
+	public List<User> listAllUsers() {
+		return database.getAllUsers();
+	}
+
 }

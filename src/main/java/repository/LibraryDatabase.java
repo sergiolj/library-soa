@@ -1,7 +1,9 @@
 package repository;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 import model.Media;
 import model.User;
@@ -48,5 +50,9 @@ public class LibraryDatabase {
 			return collectionMap.get(barcode);
 		}
 		return null;
+	}
+
+	public List<User> getAllUsers() {
+		return users.values().stream().collect(Collectors.toList());
 	}
 }

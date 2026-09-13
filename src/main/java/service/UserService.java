@@ -26,5 +26,8 @@ public interface UserService {
 
     @WebMethod
     List<String> retrieveUserLoanHistory(@WebParam(name = "id") String id);
+    
+    @WebMethod
+    List<User> listAllUsers();
 
 }
